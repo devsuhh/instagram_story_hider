@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instagram Story Hider</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      padding: 70px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #262626;
+      margin-bottom: 20px;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      justify-content: center;
+      padding-right: 20%;
+      padding-left: 20%;
+    }
+
+    button {
+      background-color: #3897f0;
+      color: #fff;
+      border: none;
+      padding: 10px 10px;
+      border-radius: 5px;
+      margin: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2d81c7;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 20px;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    .progress {
+      width: 0;
+      height: 100%;
+      background-color: #3897f0;
+      transition: width 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+  <h1>Instagram Story Hider</h1>
+  <div class="button-grid">
+    <button id="checkPageBtn">Check Page</button>
+    <button id="loadUsernamesBtn">Load Users</button>
+    <button id="exportHiddenBtn">Export Hidden Users</button>
+    <button id="exportUnhiddenBtn">Export Unhidden Users</button>
+    <button id="hideUsersBtn">Hide Users from File</button>
+    <button id="unhideUsersBtn">Unhide Users from File</button>
+    <button id="compareHiddenBtn">Compare Text File with Current Hidden</button>
+    <button id="compareUnhiddenBtn">Compare Text File with Current Unhidden</button>
+  </div>
+  <p id="pageStatus"></p>
+  <div class="progress-bar">
+    <div class="progress"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
