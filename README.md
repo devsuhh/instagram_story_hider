@@ -51,6 +51,7 @@ Instagram Story Hider is a Chrome extension that allows you to hide users from y
 - The extension uses Chrome Storage to store hidden usernames.
 - The extension communicates between the popup, content script, and background script using Chrome's message passing system.
 - The extension requires permission to access the active tab.
+- The extension include a 250 millisecond dely between hiding/unhiding each user; this is included so that the website UI doesn't freeze up.
 
 ## License
 
