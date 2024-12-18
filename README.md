@@ -1,6 +1,6 @@
 # Instagram Story Hider
 
-Instagram Story Hider is a Chrome extension that allows you to hide users from your Instagram story and provides features to export and import hidden users.
+Instagram Story Hider is a Chrome extension that allows you to hide users from your Instagram story from a text file.
 
 ## Features
 
